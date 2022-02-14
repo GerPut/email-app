@@ -3,5 +3,8 @@ const finaltext = document.querySelector("textarea[name=textarea-2]")
 const button = document.querySelector("button")
 
 button.addEventListener("click", function () {
-    console.log("click")
+    let temp = firsttext.value
+    let expression = /([A-Za-z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi
+    let emaildata = temp.match(expression)
+    console.log(emaildata)
 })
