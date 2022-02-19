@@ -11,3 +11,9 @@ button.addEventListener("click", function () {
     finaltext.innerText = emaildata
     number.innerHTML = emaildata.length
 })
+
+function copy() {
+    finaltext.select();
+    document.execCommand("copy");
+    alert("Copy succesful")
+}
